@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>First HTML</title>
+<script>
+function openBox(msg){
+alert(msg);
+}
+
+
+</script>
+</head>
+<body onload=openBox("Hello welcome!")>
+<MARQUEE BGCOLOR ="yellow" behavior = "alternate">Hello World!!! </MARQUEE>
+<video width="400" controls autoplay>
+  <source src="bunnyHighRes.mp4" type="video/mp4" >
+
+  Your browser does not support HTML video.
+</video>
+<br><br>
+<audio controls>
+  <source src="sample.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<form action="mailto:voloch@yahoo.com">
+
+<p class="nadav"><label>First name:<font color=red>*</font><input type="text" placeholder="Enter your first name" required></label></p>
+<p class="nadav">Last name:<font color=red>*</font><input type="text" placeholder="Enter your last name" required></p>
+<p>Gender:</p>
+<p>Male<input type="radio" name="gender"></p>
+<p>Female<input type="radio" name="gender"></p>
+<p>Fluid<input type="radio" name="gender" checked></p>
+<p>Non-Binary<input type="radio" name="gender" checked></p>
+<p>Password<input type="password"></p>
+<p>Email<input type="email"></p>
+<p>URL<input type="url"></p>
+<p>Tel:<input type="tel"></p>
+<p>Number:<input type="number"></p>
+<p>Range:0<input type="range" min=0 max=100 step=1>100</p>
+<p>Color:<input type="color"></p>
+
+<button id="click">Press me</button>
+
+<button id="display">Press me to erase</button>
+<script>
+document.getElementById("display").onclick=function(){
+	document.getElementById("test").style.display="none"
+
+	};
+</script>
+<p id="test">Here will change after button press!</p>
+
+<p >Date:<input type="date"></p>
+<p>Time:<input type="time" ></p>
+<p>Datetime:<input type="datetime"></p>
+<p>Remarks:<textarea cols=50 rows=5 maxlength=1000000></textarea></p>
+<p><input type="file" ></p>
+<p><input type="file" multiple></p>
+
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<br><br>
+<input type="reset">
+<br>
+<p><input type="submit" value="Send details"></p>
+</form>
+
+</html>
