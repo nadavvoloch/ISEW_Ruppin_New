@@ -1,1 +1,2 @@
-# ISEW_Ruppin_New
+# Git project example
+This is an example of a readme!
